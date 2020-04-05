@@ -5,7 +5,7 @@ const PORT = 8080;
 
 const app = express();
 
-schedule.scheduleJob('*/45 * * * * *', function() {
+schedule.scheduleJob('* */1 * * *', function() {
   ApiService.data.postUsers();
 })
 

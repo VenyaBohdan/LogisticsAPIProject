@@ -51,20 +51,46 @@ class ApiService extends React.Component {
           <div className="card">
             <div className="card-body">
               <h5 className="card-title">Della</h5>
-              <button onClick={this.apiCall}>Get info</button>
-              <ViewService items = {items}/>
+              <button onClick={this.apiCall}>Get Info</button>
+              <div>
+                <ul>
+                  {this.state.items.map(item => (
+                    <li key={item.id}>
+                      {item.login} {item.password}
+                    </li>
+                  ))}
+                </ul>
+              </div>
             </div>
           </div>
           <div className="card">
             <div className="card-body">
               <h5 className="card-title">ATI</h5>
-              <button onClick={this.apiCall}>Get info</button>
+              <button onClick={this.apiCall}>Get Info</button>
+              <div>
+                <ul>
+                  {this.state.items.map(item => (
+                    <li key={item.id}>
+                      {item.login} {item.password}
+                    </li>
+                  ))}
+                </ul>
+              </div>
             </div>
           </div>
           <div className="card">
             <div className="card-body">
-              <h5 className="card-title">Lardi-Trans</h5>
-              <button onClick={this.apiCall}>Get info</button>
+              <h5 className="card-title">Logic-Tech</h5>
+              <button onClick={this.apiCall}>Get Info</button>
+              <div>                
+                <ul>
+                  {this.state.items.map(item => (
+                    <li key={item.id}>
+                      {item.login} {item.password}
+                    </li>
+                  ))}
+                </ul>
+              </div>
             </div>
           </div>
         </div>
